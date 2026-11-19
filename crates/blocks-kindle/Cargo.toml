@@ -1,0 +1,10 @@
+[package]
+name = "blocks-kindle"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+blocks-core.workspace = true
+blocks-render.workspace = true
+primitive-app.workspace = true

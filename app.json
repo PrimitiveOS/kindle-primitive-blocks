@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "primitive-blocks",
+  "dir": "blocks",
+  "name": "Primitive Blocks",
+  "subtitle": "Fit pieces and clear the board",
+  "developer": {
+    "name": "Primitive AI"
+  },
+  "categories": [
+    "games"
+  ],
+  "description": "Place three pieces at a time on a nine-by-nine board. Fill a row, column, or three-by-three box to clear it and beat your best score.",
+  "repo": "https://github.com/DoanNguyenTrong/kindle-primitive-blocks",
+  "licence": "PolyForm-Noncommercial-1.0.0",
+  "source": "hosted",
+  "icon": "icon.png",
+  "changes": {
+    "network": false,
+    "stops_kindle_ui": false,
+    "starts_at_boot": false,
+    "root_filesystem": false,
+    "hooks": false
+  },
+  "versions": []
+}
