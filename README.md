@@ -47,7 +47,10 @@ cargo test --offline --locked --workspace
 cargo run --offline --locked -p blocks-desktop
 ```
 
-The desktop target writes previews to `build/previews/`. The desktop simulation exercises placement and the new-game confirmation. Physical Kindle testing is pending. See the [device notes](docs/device-notes.md) for the verification checklist.
+The desktop target writes previews to `build/previews/`. The desktop simulation exercises placement and the new-game confirmation.
+On an ARMHF Kindle Oasis 3 running firmware 5.18.2, Blocks selected and deselected a piece, preserving the
+original board and tray, then returned to Launcher. See the [device notes](docs/device-notes.md) for the
+verification checklist.
 
 ## Licence
 
