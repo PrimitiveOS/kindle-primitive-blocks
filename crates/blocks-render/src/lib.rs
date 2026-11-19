@@ -42,10 +42,18 @@ impl View {
     }
 
     fn draw_board(&self, canvas: &mut Canvas, width: i32) {
+        let board_active = !self.confirm && !self.game.over();
         for (y, row) in self.game.board().iter().enumerate() {
             for (x, &occupied) in row.iter().enumerate() {
                 let bounds = board_cell(width, x, y);
-                canvas.fill(bounds.inset(1), if occupied { 30 } else { 247 });
+                let pressed = board_active && canvas.control_pressed(bounds, false);
+                let ink = match (occupied, pressed) {
+                    (true, true) => PAPER,
+                    (true, false) => 30,
+                    (false, true) => BLACK,
+                    (false, false) => 247,
+                };
+                canvas.fill(bounds.inset(1), ink);
                 if occupied {
                     canvas.fill(bounds.inset(canvas.px(19)), 85);
                 }
@@ -79,16 +87,19 @@ impl View {
     }
 
     fn draw_pieces(&self, canvas: &mut Canvas, width: i32) {
+        let pieces_active = !self.confirm && !self.game.over();
         for i in 0..3 {
             let bounds = piece_card(width, i);
-            let selected = self.selected == Some(i);
+            let shape = self.game.piece(i);
+            let pressed = pieces_active && shape.is_some() && canvas.control_pressed(bounds, false);
+            let selected = (self.selected == Some(i)) ^ pressed;
             canvas.panel(
                 bounds,
                 22,
                 if selected { 5 } else { 2 },
                 if selected { BLACK } else { PAPER },
             );
-            if let Some(shape) = self.game.piece(i) {
+            if let Some(shape) = shape {
                 let length = canvas.px(29);
                 let shape_width = (shape.iter().map(|(x, _)| x).max().unwrap_or(&0) + 1) as i32;
                 let shape_height = (shape.iter().map(|(_, y)| y).max().unwrap_or(&0) + 1) as i32;
