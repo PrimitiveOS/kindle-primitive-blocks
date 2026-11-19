@@ -1,5 +1,5 @@
 #!/bin/sh
-# Name: Primitive Blocks
+# Name: Blocks
 # Author: Primitive AI
 # DontUseFBInk
 # PrimitiveUSBLease

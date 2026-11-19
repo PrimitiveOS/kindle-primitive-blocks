@@ -1,6 +1,6 @@
 <div align="center">
 
-# Primitive Blocks
+# Blocks
 
 **Fit three pieces at a time on a nine-by-nine board.**
 
@@ -34,7 +34,7 @@ Choose one of the three offered pieces and tap where its upper-left corner shoul
 
 1. Find the local ARMHF package and USB installation steps in the [install guide](INSTALL.md).
 2. Extract the package, copy the `blocks` and `documents` folders to your jailbroken Kindle’s user storage, and eject it.
-3. Open Primitive Blocks from Primitive Launcher. **Done** returns to the launcher grid.
+3. Open Blocks from Primitive Launcher. **Done** returns to the launcher grid.
 
 The local `app.json` is a listing draft. A public listing requires approved artwork and an asset from a published release.
 

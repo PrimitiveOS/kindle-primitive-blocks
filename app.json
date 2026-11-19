@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "primitive-blocks",
   "dir": "blocks",
-  "name": "Primitive Blocks",
+  "name": "Blocks",
   "subtitle": "Fit pieces and clear the board",
   "developer": {
     "name": "Primitive AI"
