@@ -2,15 +2,22 @@
 
 # Blocks
 
-**Fit three pieces at a time on a nine-by-nine board.**
+**Fit pieces and clear the board**
 
-[**Install guide**](INSTALL.md) · [**Device notes**](docs/device-notes.md) · [**Changelog**](CHANGELOG.md)
+[![Release](https://img.shields.io/github/v/release/PrimitiveOS/kindle-primitive-blocks?label=release)](https://github.com/PrimitiveOS/kindle-primitive-blocks/releases) [![Licence: PolyForm-Noncommercial-1.0.0](https://img.shields.io/badge/licence-PolyForm--Noncommercial--1.0.0-blue)](LICENSE) [![Store downloads](https://img.shields.io/badge/Store%20downloads-34-brightgreen)](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json)
+
+[**Download**](https://github.com/PrimitiveOS/kindle-primitive-blocks/releases/latest) · [**Install guide**](INSTALL.md) · [**Changelog**](CHANGELOG.md)
 
 </div>
 
 ---
 
-Choose one of the three offered pieces and tap where its upper-left corner should land. Completed rows, columns, and three-by-three boxes clear together. A fresh set appears after you place all three pieces.
+Place three pieces at a time on a nine-by-nine board. Fill a row, column, or three-by-three box to clear it and beat your best score.
+
+## Quick start
+
+After setting up PrimitiveOS, open **Store** from Primitive Launcher. Choose **Blocks** under **Apps**,
+tap **Get**, and open it from the Launcher grid. The [install guide](INSTALL.md) also covers the standalone USB package.
 
 ## Screenshots
 
@@ -30,13 +37,6 @@ Choose one of the three offered pieces and tap where its upper-left corner shoul
 - **Clear several lines at once.** A single placement can complete a row, column, and box.
 - **Resume a game.** Blocks saves the current board and your best score.
 
-## Quick start
-
-After setting up PrimitiveOS, open **Store** from Primitive Launcher. Choose **Blocks** under **Apps**,
-tap **Get**, and open it from the Launcher grid. The [install guide](INSTALL.md) also covers local USB testing.
-
-The local `app.json` is a listing draft. A public listing requires approved artwork and an asset from a published release.
-
 ## Develop locally
 
 Keep `doannt-kindle-tools` and `doannt-kindle-launcher` beside this checkout, then run the following from this repo.
@@ -50,6 +50,23 @@ The desktop target writes previews to `build/previews/`. The desktop simulation 
 On an ARMHF Kindle Oasis 3 running firmware 5.18.2, Blocks selected and deselected a piece, preserving the
 original board and tray, then returned to Launcher. See the [device notes](docs/device-notes.md) for the
 verification checklist.
+
+## Status
+
+| Device | Status |
+|---|---|
+| Kindle Oasis 3 (1264 × 1680, firmware 5.18.2) | Tested on hardware |
+
+**Current version: 0.1.1.** Changes are in [CHANGELOG.md](CHANGELOG.md).
+
+## Downloads
+
+**34 downloads** from Store, as of 2026-11-21. Store shows the same count on the app page.
+The count is GitHub downloads of this app's release packages, from the [Store catalog](https://primitiveos.github.io/kindle-primitive-catalog/v1/index.json).
+
+## Documentation
+
+[Install guide](INSTALL.md) · [Changelog](CHANGELOG.md) · [Device notes](docs/device-notes.md)
 
 ## Licence
 
