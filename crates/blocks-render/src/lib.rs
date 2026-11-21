@@ -192,7 +192,7 @@ impl View {
 impl App for View {
     fn draw(&self, canvas: &mut Canvas) {
         let width = canvas.bounds().w;
-        header(canvas, "Blocks", "Done");
+        header(canvas, "Blocks", "Exit");
         self.draw_score(canvas, width);
         self.draw_board(canvas, width);
         self.draw_pieces(canvas, width);
